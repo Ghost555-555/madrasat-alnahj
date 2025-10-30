@@ -153,3 +153,30 @@ footer {
   color: #94a3b8;
   font-size: 14px;
 }
+/* ======= تحسين عرض الناف بار في الهاتف ======= */
+@media (max-width: 600px) {
+  header {
+    padding: 8px 12px;
+  }
+
+  .brand {
+    font-size: 16px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .nav-links a {
+    padding: 6px 8px;
+    font-size: 14px;
+  }
+
+  main {
+    margin-top: 80px; /* تقليل التباعد لتعويض الشريط الأنحف */
+  }
+}
+
+
