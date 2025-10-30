@@ -1,9 +1,96 @@
 
+/* ======== الإعدادات العامة ======== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-/* ======== Contact Section (Social only) ======== */
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: rgba(255, 183, 77, 0.9);
+  color: #1f2a3a;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ======= شريط التنقل الثابت ======= */
+header {
+  background: linear-gradient(90deg, #000000, rgb(5, 155, 0));
+  color: #ffffff;
+  padding: 14px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  background: rgb(255, 253, 253);
+  color: #000;
+}
+
+/* ======= تباعد لتعويض الشريط الثابت ======= */
+main {
+  margin-top: 100px;
+}
+
+/* ======= الأقسام ======= */
+section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 18px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+h2 {
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+p.lead {
+  color: #475569;
+}
+
+.list {
+  color: #475569;
+  line-height: 1.8;
+  padding-right: 20px;
+}
+
+/* ======== قسم التواصل ======== */
 .contact {
-  background: rgb(255, 255, 255);
-  color: #fff;
+  background: #ffffff;
   text-align: center;
   padding: 80px 20px;
 }
@@ -14,12 +101,12 @@
 }
 
 .contact .heading span {
-  color: rgb(5, 155, 0) ;
+  color: rgb(5, 155, 0);
 }
 
 .contact-content p {
   font-size: 1.1em;
-  color:  rgb(5, 155, 0) ;
+  color: rgb(5, 155, 0);
   margin-bottom: 30px;
 }
 
@@ -32,18 +119,20 @@
 
 .contact .social-icons a {
   font-size: 2em;
-  color: rgb(5, 155, 0) ;
+  color: rgb(5, 155, 0);
   transition: 0.3s;
 }
 
 .contact .social-icons a:hover {
-  color:  rgb(0, 0, 0) ;
+  color: rgb(0, 0, 0);
   transform: translateY(-5px);
 }
 
-.contact .btn {
-  background:  rgb(5, 155, 0) ;
-  color: rgb(5, 155, 0) ;
+/* ======== الأزرار العامة ======== */
+.btn {
+  display: inline-block;
+  background: rgb(5, 155, 0);
+  color: #fff;
   font-weight: bold;
   border: none;
   padding: 15px 35px;
@@ -53,88 +142,14 @@
   text-decoration: none;
 }
 
-.contact .btn:hover {
-  background:  rgba(0, 0, 0, 0.864);
+.btn:hover {
+  background: rgb(0, 100, 0);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    *{box-sizing:border-box;margin:0;padding:0}
-    html,body{height:100%;
-      font-family:'Segoe UI', Tahoma, sans-serif;
-      background:rgba(228, 123, 3, 0.984);
-      color:#1f2a3a;
-      scroll-behavior:smooth;}
-
-    /* ======= شريط التنقل الثابت ======= */
-    header{
-      background:linear-gradient(90deg,#000000, rgb(5, 155, 0));
-      color:#ffffff;
-      padding:14px 20px;
-      position:fixed;
-      top:0;
-      left:0;
-      width:100%;
-      z-index:1000;
-      box-shadow:0 2px 10px rgba(0, 0, 0, 0,2);
-    }
-
-    .container{max-width:1000px;margin:0 auto;padding:20px}
-    nav{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
-    .brand{font-weight:700;font-size:20px}
-    .nav-links a{color:#ffffff;text-decoration:none;padding:8px 12px;border-radius:8px;transition:0.2s}
-    .nav-links a:hover{background:rgb(255, 253, 253)}
-
-    /* تباعد لتعويض الشريط الثابت */
-    main{margin-top:100px;}
-
-    section{background:#fff;border-radius:12px;padding:20px;margin-top:18px}
-    h2{margin-bottom:12px;color:#0f172a}
-    p.lead{color:#475569}
-
-    input,textarea{width:100%;padding:10px;border:1px solid #f3ecec;border-radius:8px;margin-bottom:10px}
-    .btn{display:inline-block;background:#ffffff;color:#ffffff;padding:10px 14px;border-radius:8px;border:none;cursor:pointer;transition:0.2s}
-    .btn:hover{background:#ffffff}
-
-    .success-message{
-      display:none;
-      margin-top:12px;
-      padding:12px;
-      background:#d1fae5;
-      color:#000000;
-      border:1px solid #34d399;
-      border-radius:8px;
-      text-align:center;
-      font-weight:600;
-      animation:fadeIn 0.5s ease;
-    }
-
-    @keyframes fadeIn{
-      from{opacity:0;transform:translateY(-5px);}
-      to{opacity:1;transform:translateY(0);}
-    }
-
-    footer{margin-top:24px;text-align:center;color:#94a3b8;font-size:14px}
+/* ======== الفوتر ======== */
+footer {
+  margin-top: 24px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 14px;
+}
