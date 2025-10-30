@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مدرسة النهج التربوي - الموقع الرسمي</title>
+   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">مدرسة النهج التربوي</div>
+        <div class="nav-links">
+          <a href="#about">معلومات المدرسة</a>
+          <a href="#prices">الأسعار</a>
+          <a href="#text">موقعنا</a>
+          <a href="#contact">تواصل معنا</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>معلومات المدرسة</h2>
+      <p class="lead">مدرسة النهج التربوي تقدم تعليمًا متميزًا من خلال بيئة تعليمية حديثة، وكادر تدريس مؤهل، ومناهج متطورة.</p>
+    </section>
+
+    
+    <section id="prices">
+      <h2> عن المدرسه </h2>
+      <ul style="color:#475569;">
+        <li>كادر اداري وتربوي متخصص يعمل بنظام الجودة </li>
+        <li>ساحة معشبة </li>
+        <li>فصول مزودة بشاشات الكاميرا </li>
+        <li>اشراف تربوي متخصص</li>
+        <li>متابعة مستمرة بين المدرسة وولي الامر </li>
+        <li>الاهتمام بالجانب الاخلاقي</li>
+        <li>نقرا افكار الطلاب ونحولها الى واقع يخدم المجتمع</li>
+        <li>بوابة مستقلة للبنين وبوابة مستقلة للبنات- انشطة تربوية وثقافية وترفيهية</li>
+        <li>نهج القراءة للاطفال باساليب ممتعة وفعالة ليكون التعليم بداية رحلتهم ونجاحهم</li>
+
+      </ul>
+    </section>
+
+    <section id="prices">
+      <h2>الأسعار والرسوم</h2>
+      <ul style="color:#475569;">
+        <li> الصف الاول — 125,000 ريال </li>
+        <li> الصف الثاني  — 130,000 ريال </li>
+        <li> الصف الثالث — 135,000 ريال </li>
+        <li>الصف الرابع  — 145,000 ريال </li>
+        <li>الصف الخامس  — 155,000 ريال </li>
+        <li>الصف السادس  — 160,000 ريال </li>
+        <li>الصف السابع  — 165,000 ريال </li>    
+        <li>الصف الثامن  — 175,000 ريال </li>
+        <li> الصف التاسع  — 195,000 ريال </li>
+        <li>اول ثانوي  — 195,000 ريال </li>
+
+
+
+      </ul>
+    </section>
+
+    
+    <section id="#text">
+      <h2> موقعنا</h2>
+      <ul style="color:#475569;">
+        شارع الزبيري خلف حلويات ابو خالد
+     
+      </ul>
+    </section>
+
+
+
+
+
+<section class="contact" id="contact">
+  <h2 class="heading show">للتواصل <span>معنا</span></h2>
+
+  <div class="contact-content">
+
+     
+    <div class="social-icons show">
+      <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+      <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://wa.me/96772076061" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <footer>
+    <div class="container">
+      <p>© 2025 مدرسة النهج التربوي — كل الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const successMsg = document.getElementById('successMsg');
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      form.reset();
+      successMsg.style.display = 'block';
+      window.scrollTo({ top: form.offsetTop - 100, behavior: 'smooth' });
+      setTimeout(() => {
+        successMsg.style.display = 'none';
+      }, 4000);
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
